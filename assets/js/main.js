@@ -37,40 +37,25 @@ navLinks.forEach(navLink => {
 })
 
 // accordion function
-function accordionFn() {
-  if (window.innerWidth < 1024) {
-    const accordionTitles = document.querySelectorAll(".team-card-header");
-    accordionTitles.forEach((accordionTitle, i) => {
-      accordionTitle.addEventListener("click", () => {
-        if (accordionTitle.parentElement.parentElement.classList.contains("is-open")) {
-          accordionTitle.parentElement.parentElement.classList.remove("is-open");
-          accordionTitle.nextElementSibling.style.maxHeight = null
-        } else {
-          const accordionTitlesWithIsOpen = document.querySelectorAll(".is-open");
-          accordionTitlesWithIsOpen.forEach((accordionTitleWithIsOpen) => {
-            accordionTitleWithIsOpen.classList.remove('is-open')
-            accordionTitleWithIsOpen.querySelector('.team-card-body').style.maxHeight = null
-          });
-          accordionTitle.parentElement.parentElement.classList.add("is-open");
-          accordionTitle.nextElementSibling.style.maxHeight = `${accordionTitle.nextElementSibling.scrollHeight}px`
-        }
+const accordionTitles = document.querySelectorAll(".team-card-header");
+accordionTitles.forEach((accordionTitle, i) => {
+  accordionTitle.addEventListener("click", () => {
+    if (accordionTitle.parentElement.parentElement.classList.contains("is-open")) {
+      accordionTitle.parentElement.parentElement.classList.remove("is-open");
+      accordionTitle.nextElementSibling.style.maxHeight = null
+    } else {
+      const accordionTitlesWithIsOpen = document.querySelectorAll(".is-open");
+      accordionTitlesWithIsOpen.forEach((accordionTitleWithIsOpen) => {
+        accordionTitleWithIsOpen.classList.remove('is-open')
+        accordionTitleWithIsOpen.querySelector('.team-card-body').style.maxHeight = null
       });
-    });
-  }
-}
+      accordionTitle.parentElement.parentElement.classList.add("is-open");
+      accordionTitle.nextElementSibling.style.maxHeight = `${accordionTitle.nextElementSibling.scrollHeight}px`
+    }
+  });
+});
 
 // Apply for window scroll
 window.addEventListener("scroll", function () {
   stickyOnScroll()
 });
-
-// Apply for window resize
-window.addEventListener("resize", function () {
-  accordionFn()
-});
-
-// Apply for window load
-window.addEventListener("DOMContentLoaded", function () {
-  accordionFn()
-});
-

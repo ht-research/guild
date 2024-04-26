@@ -2,19 +2,22 @@
 module.exports = {
   content: ["./**/*.{html,js}"],
   theme: {
+    colors: {
+      darkpurple: "#22143A",
+      middlebluepurple: "#8E71BF",
+      glossygrape: '#9F90B6',
+      lavenderblue: '#C7CDFF',
+      brightlavender: '#B593EE',
+      darkgray: '#A8A8A8',
+      black: '#000',
+      white: '#fff'
+    },
     extend: {
       screens: {
         xxs: "320px",
         xs: "385px",
       },
-      colors: {
-        darkpurple: "#22143A",
-        middlebluepurple: "#8E71BF",
-        glossygrape: '#9F90B6',
-        lavenderblue: '#C7CDFF',
-        brightlavender: '#B593EE',
-        darkgray: '#A8A8A8',
-      },
+
       fontFamily: {
         adonis: ["adonis-web", "serif"],
         archivo: ["Archivo", "sans-serif"],
