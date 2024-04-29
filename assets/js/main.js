@@ -18,9 +18,11 @@ const primaryNav = document.querySelector('#primary-nav');
 
 function menuFn() {
   if (document.body.classList.contains('body-menu-open')) {
+    document.documentElement.classList.remove('overflow-hidden')
     document.body.classList.remove('body-menu-open')
     primaryNav.style.paddingTop = null;
   } else {
+    document.documentElement.classList.add('overflow-hidden')
     document.body.classList.add('body-menu-open')
     primaryNav.style.paddingTop = `${siteHeader.offsetHeight}px`
   }

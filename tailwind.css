@@ -110,7 +110,7 @@
   }
 
   body:is(.body-menu-open) .menu-toggle-close {
-    @apply block lg:right-4 lg:relative;
+    @apply block;
   }
 
   body:not(.body-menu-open) .primary-nav {
