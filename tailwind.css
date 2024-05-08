@@ -4,7 +4,7 @@
 
 @layer base {
   html {
-    scroll-behavior: smooth;
+    @apply scroll-smooth scroll-pt-28 lg:scroll-pt-32;
   }
 
   body {
@@ -54,10 +54,6 @@
   button {
     @apply outline-none;
   }
-
-  /* :target {
-    @apply scroll-mt-28 lg:scroll-mt-32;
-  } */
 }
 
 @layer components {
