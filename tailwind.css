@@ -131,6 +131,38 @@
     @apply lg:min-h-72 2xl:min-h-[36.5vh] border-[0.3px] lg:border-r-0 xl:border-l-[0.3px] lg:border-b-[0.3px] border-white/60;
   }
 
+  .team-card-grid > .team-card-wrapper:nth-child(2) {
+    @apply xl:col-span-2 lg:row-start-2 xl:row-auto;
+  }
+
+  .team-card-grid > .team-card-wrapper:nth-child(3) {
+    @apply lg:row-start-2 xl:row-auto xl:col-span-2 xl:col-start-4;
+  }
+
+  .team-card-grid > .team-card-wrapper:nth-child(4) {
+    @apply lg:row-start-3 xl:row-start-2 xl:row-auto xl:col-span-2 xl:col-start-2;
+  }
+
+  .team-card-grid > .team-card-wrapper:nth-child(5) {
+    @apply lg:row-start-3 xl:row-start-2 xl:row-auto xl:col-span-2 xl:col-start-4;
+  }
+
+  .team-card-grid > .team-card-wrapper:nth-child(6) {
+    @apply lg:row-start-4 xl:row-start-3 xl:row-auto xl:col-span-2 xl:col-start-2;
+  }
+
+  .team-card-grid > .team-card-wrapper:nth-child(7) {
+    @apply lg:row-start-4 xl:row-start-3 xl:col-span-2 xl:col-start-4;
+  }
+
+  .team-card-grid > .team-card-wrapper:nth-child(8) {
+    @apply lg:row-start-5 xl:row-start-4 xl:row-auto xl:col-span-2 xl:col-start-2;
+  }
+
+  .team-card-grid > .team-card-wrapper:nth-child(9) {
+    @apply lg:row-start-5 xl:row-start-4 xl:col-span-2 xl:col-start-4;
+  }
+
   .team-card-grid > div:nth-child(2) .team-card,
   .team-card-grid > div:nth-child(3) .team-card {
     @apply xl:border-t-0;
