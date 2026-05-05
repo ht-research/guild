@@ -242,13 +242,13 @@
     @apply lg:max-h-[125%] lg:opacity-100 lg:overflow-y-auto lg:no-scrollbar;
   }
 
-  .india-team-card-grid > div:nth-last-child(1) .team-card:hover .team-card-bg,
-  .india-team-card-grid > div:nth-last-child(2) .team-card:hover .team-card-bg {
+  .team-card-grid > div:nth-last-child(1) .team-card:hover .team-card-bg,
+  .team-card-grid > div:nth-last-child(2) .team-card:hover .team-card-bg {
     @apply lg:-top-full;
   }
 
-  .india-team-card-grid > div:nth-last-child(1) .team-card:hover .team-card-inner,
-  .india-team-card-grid > div:nth-last-child(2) .team-card:hover .team-card-inner {
+  .team-card-grid > div:nth-last-child(1) .team-card:hover .team-card-inner,
+  .team-card-grid > div:nth-last-child(2) .team-card:hover .team-card-inner {
     @apply lg:-translate-y-[65%] 2xl:-translate-y-[60%];
   }
 
