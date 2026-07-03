@@ -64,9 +64,86 @@
                 alt="Guild Capital Logo" />
               <span class="sr-only site-text">Guild / venture further</span>
             </a>
+            <button
+              id="menu-toggle"
+              class="p-0 m-0 w-12 lg:w-20 h-8 lg:h-10 stroke-lavenderblue hover:stroke-white"
+              aria-label="Menu toggle">
+              <svg
+                class="menu-toggle-open w-full h-full"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 96 54"
+                fill="none">
+                <path
+                  d="M2 9H93.5"
+                  stroke-width="4" />
+                <path
+                  d="M2 27H93.5"
+                  stroke-width="4" />
+                <path
+                  d="M2 45H93.5"
+                  stroke-width="4" />
+              </svg>
+              <svg
+                class="menu-toggle-close w-full h-full hidden"
+                xmlns="http://www.w3.org/2000/svg"
+                width="96"
+                height="54"
+                viewBox="0 0 96 54"
+                fill="none">
+                <path
+                  d="M24.0553 3L71.1106 50.0553"
+                  stroke-width="4" />
+                <path
+                  d="M24.0553 50.2734L71.1106 3.21814"
+                  stroke-width="4" />
+              </svg>
+            </button>
           </div>
         </div>
       </div>
+
+      <!-- Menu -->
+      <nav
+        id="primary-nav"
+        class="primary-nav bg-darkpurple text-white fixed inset-0 w-full h-full z-20 overflow-hidden lg:!pt-0 transition-transform duration-[400ms] lg:duration-700 ease-in-out">
+        <div
+          class="h-full max-h-svh flex flex-col lg:flex-row gap-3 md:gap-5 lg:items-end py-4 lg:py-0">
+          <div
+            class="lg:w-2/5 h-full flex flex-col mt-auto justify-end border-b lg:border-b-0 lg:border-r border-white/15">
+            <img
+              class="max-w-40 xs:max-w-[50%] sm:max-w-[70%] md:max-w-80 lg:max-w-[73%] w-full h-auto lg:h-max"
+              src="../assets/images/menu-bg-vector.svg"
+              alt="" />
+          </div>
+          <div
+            class="lg:w-3/5 lg:h-full flex flex-col lg:mt-auto justify-end lg:border-l lg:border-l-white/15">
+            <ul class="primary-nav-list font-adonis">
+              <li>
+                <a
+                  class="delay-75"
+                  href="https://investors-guildcap.account.box.com/login"
+                  target="_blank"
+                  >Investor Login</a
+                >
+              </li>
+              <li>
+                <a
+                  class="delay-150"
+                  href="../#playbook"
+                  >Playbook</a
+                >
+              </li>
+              <li>
+                <a
+                  class="delay-300"
+                  href="../#contact"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <main id="main">
@@ -324,11 +401,23 @@
       <div
         class="site-width relative z-10 lg:px-20 text-white/50 py-8 xl:py-16 border-t-[0.3px] border-t-white/60">
         <div class="flex flex-col lg:flex-row gap-3 items-center justify-between">
-          <div class="lg:w-1/3">
+          <div class="lg:w-1/3 space-x-1.5">
             <a
               class="inline-block text-base lg:text-lg underline underline-offset-4 capitalize"
               href="../privacy-policy/"
               >Privacy Policy</a
+            >
+            <span>|</span>
+            <a
+              class="inline-block text-base lg:text-lg underline underline-offset-4 capitalize"
+              href="../portfolio-services/"
+              >Portfolio Services</a
+            >
+            <span>|</span>
+            <a
+              class="inline-block text-base lg:text-lg underline underline-offset-4 capitalize"
+              href="../eula/"
+              >EULA</a
             >
           </div>
           <a
@@ -351,5 +440,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="../assets/js/main.js"></script>
   </body>
 </html>
